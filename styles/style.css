@@ -99,6 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .main__title {
@@ -123,19 +124,17 @@ body {
   will-change: transform;
 }
 
-/*FOOTER*/
-.footer {
-  display: flex;
-  min-height: 100px;
-  justify-content: center;
-  align-items: center;
-  background-color: #030302;
-}
-
 .copy {
-  cursor: pointer;
-  text-decoration: none;
+  display: block;
+  position: absolute;
   color: var(--text);
   font-size: calc(var(--index) * 0.8);
   letter-spacing: calc(var(--index) / 37.5);
+  cursor: pointer;
+  text-decoration: none;
+  bottom: calc(var(--index) * 2.5);
+}
+
+.copy:hover {
+  opacity: 0.5;
 }
